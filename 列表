@@ -1,18 +1,24 @@
 # Python
-关于我学习Python的道路
+关于我学习Python那回事
+
 切记！！！索引从0开始不是1
+
 列表 list:
 # 创建一个列表
 lol = ['top','jun','mid','adc','sup']
+
 # 访问列表元素
 print(lol[0])
+
 # 修改列表元素
 lol[0] = 'topsplp'
+
 # 从列表里添加元素
 1.在列表末尾添加元素
 lol.append('lol')
 2.在列表中插入元素
 lol.insert(0,'lol')
+
 # 从列表里删除元素
 1.用del语句删除元素
 del lol[0]
@@ -22,3 +28,16 @@ data = lol.pop()    # 默认删除最后一个值
 data = lol.pop(0)   # top将移动到data里 
 4.根据值删除元素
 lol.remove('top')
+
+# 组织列表
+1.使用方法sort()对列表进行永久性排序
+lol.sort()  #按字母顺序排列了列表元素
+lol.sort(reverse=True)  #按字母相反顺序排列了列表元素
+2.使用方法sorted()对列表进行临时排序
+lol.sorted()  #仅对一次有效
+3.倒着打印列表
+lol.reverse() #按顺序倒着打印出列表元素
+4.确定列表的长度
+len(lol)
+
+# 从-1，-2列表从后到前开始列表元素
