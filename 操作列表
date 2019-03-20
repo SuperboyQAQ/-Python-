@@ -1,0 +1,46 @@
+# Python
+关于我学习Python的道路
+
+操作列表
+# 创建一个列表
+lol = ['top','jun','mid','adc','sup']
+
+# 遍历整个列表
+for l in lol:   # 将 l 遍历列表 lol （（末尾不要忘记冒号 :
+    print()     # 输出 l
+
+# 避免缩进错误
+python中缩进为4个字符
+
+#创建数字列表
+1.使用函数range()
+>>> for n in number(1,5):   # 做一个 n 遍历 number(1,5)
+        print(n)            # 输出 n 只会到 4 ，python中函数 range() 会到 5 之前的一个数字 4 停止
+
+2.使用range()创建数字列表
+numbers = list(range(1,6))
+print(numbers)
+
+3.对数字列表执行简单的统计计算
+>>> min(numbers)    # 最小值
+>>> max(numbers)    # 最大值
+>>> sum(numbers)    # 总和
+
+# 使用列表的一部分
+# 切片    ((处理部分列表元素
+1.遍历切片
+for l in lol[:3]:
+    print(l)    #遍历前三名队员
+2.复制列表
+data = lol[:]   #复制lol中所有元素
+
+# 元组
+numbers = (66,233)
+1.定义元组      ((类似列表，但是不可变的列表
+print(numbers[0])   #输出 66
+print(numbers[1])   #输出 233
+2.遍历元组中的所有值
+for n in numbers:
+    print(n)   
+3.修改元组变量
+#重新定义整个元组
