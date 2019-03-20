@@ -1,0 +1,62 @@
+# Python
+关于我学习Python那回事
+
+# if语句
+# 创建一个列表
+lol = ['top','jun','mid','adc','sup']
+
+# 条件测试
+布尔值 有两种表达式 True 和 False   ((首字母记得大写喔！！
+在 if 语句中，python会根据条件测试的值为True还是False来决定是否执行if语句的代码。
+值为 True 会执行if下面的代码
+值为 False 会忽略这些代码
+
+# 检查是否相等      ((注意大小写喔！！
+>>> lol = 'adc'
+>>> lol == 'adc'
+True
+>>> lol == 'top'
+False
+
+# 符号
+>   大于
+<   小于
+==  等于
+!=  不等于
+
+#检查多个文件
+1.使用and检查多个文件
+>>> number_0 = 5
+>>> number_1 = 10
+>>> number_0 > 1 and number_1 > 5
+True
+>>> number_0 > 5 and number_1 > 5
+False
+((and语句中 两个必须都得通过才会输出True，否则为False
+2.使用or检查多个文件
+>>> number_0 = 5
+>>> number_1 = 10
+>>> number_0 > 1 and number_1 > 5
+True
+>>> number_0 > 5 and number_1 > 5
+True
+((or语句中 有一个通过就会输出True，否则为False
+3.检查特定值是否包含在列表中 
+>>> 'adc' in lol
+True
+4.检查特定值是否不包含在列表中
+data = 'data'
+>>> if fata no in lol:
+>>>     print("hello,world!")
+hello,world!
+
+# if-elif-else 语句
+>>> age = 17
+>>> if age >= 18：   #如果第一个条件成立，则输出值。
+>>>     print("yes")
+>>> elif age <12     #如果以上得条件没有成立，则判断此条件，成立则输出值。
+>>>     print("children")
+>>> else:            #如果以上的条件没有成立，则输出此值。   
+>>>     print("no")
+no
+((可使用多个elif条件，else条件可省略
