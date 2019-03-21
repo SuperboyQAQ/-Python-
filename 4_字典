@@ -94,7 +94,7 @@ yes
 mlxg
 karsa
 
-# 在字典中储存字典
+# 在字典中储存字典  ((此时 rng/ig 变为 键，其他变为 值 
 >>> lpl = {
     'rng' : {'top':'letme',
     'jun':'mlxg',
