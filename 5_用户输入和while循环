@@ -1,1 +1,8 @@
+# Python
+关于我学习Python那回事
 
+# 函数 input() 的工作原理
+>>> name = input("what's your name:")
+>>> print("hello,",name)
+what's your name: Rimuru
+hello,Rimuru
