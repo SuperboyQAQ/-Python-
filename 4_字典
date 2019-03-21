@@ -1,1 +1,118 @@
+# Python
+关于我学习Python那回事
 
+# 字典
+# 创建一个简单的字典
+>>> rng = {'top':'letme','jun':'mlxg','mid':'xiaohu','adc':'uzi','sup':'ming'}
+or
+>>> rng = {
+    'top':'letme',
+    'jun':'mlxg',
+    'mid':'xiaohu',
+    'adc':'uzi',
+    'sup':'ming'
+    }
+
+# 使用字典   ((字典中，每个 键 都对应着每个 值 ，如 top 对应着 letme
+>>> print(rng['top'])
+letme
+
+# 添加键—值
+>>> rng['jun_2'] = 'karsa'
+>>> print(rng)
+rng = {'top':'letme','jun':'mlxg','mid':'xiaohu','adc':'uzi','sup':'ming','jun_2':'karsa'}
+
+# 删除键—值
+>>> del rng['top']
+>>> print(rng)
+rng = {'jun':'mlxg','mid':'xiaohu','adc':'uzi','sup':'ming'}
+((注意！！！删除的键——值会永久消失
+
+# 遍历字典
+# 遍历所有的键—值
+>>> for place,player in rng.items():
+>>>     print(place,player)
+top letme
+jun mlxg
+mid xiaohu
+adc uzi
+sup ming
+# 按顺序遍历所有的键—值
+>>> for place,player in sorted(rng.items()):
+>>>     print(place,player)
+adc uzi
+jun mlxg
+mid xiaohu
+sup ming
+top letme
+
+# 遍历所有的键
+>>> for place in rng.keys():
+>>>     print(place)
+top
+jun
+mid
+adc
+sup
+
+# 遍历所有的值
+>>> for player in rng.values():
+>>>     print(player)
+letme
+mlxg
+xiaohu
+uzi
+ming
+
+# 检查 键or值 是否在字典里
+>>> if 'faker' not in rng.values()：
+>>>     print("yes")
+yes
+>>> if 'data' not in rng.keys():
+>>>     print("yes")
+yes
+
+# 嵌套
+>>> rng = {'top':'letme','jun':'mlxg','mid':'xiaohu','adc':'uzi','sup':'ming'}
+>>> ig = {'top':'the shy','jun':'ning','mid':'rookie','adc':'jackeylove','sup':'baolan'}
+>>> lpl = [rng,ig]
+>>> for l in lpl:
+>>>     print(l)
+{'top': 'letme', 'jun': 'mlxg', 'mid': 'xiaohu', 'adc': 'uzi', 'sup': 'ming'}
+{'top': 'the shy', 'jun': 'ning', 'mid': 'rookie', 'adc': 'jackeylove', 'sup': 'baolan'}
+
+# 在字典中储存列表
+>>> rng = {
+    'top':'letme',
+    'jun':['mlxg','karsa'],
+    'mid':'xiaohu',
+    'adc':'uzi',
+    'sup':'ming'
+    }
+>>> for jun in rng['jun']:
+>>>     print[jun]
+mlxg
+karsa
+
+# 在字典中储存字典
+>>> lpl = {
+    'rng' : {'top':'letme',
+    'jun':'mlxg',
+    'mid':'xiaohu',
+    'adc':'uzi',
+    'sup':'ming'
+    },
+    'ig' : {'top':'the shy',
+    'jun':'ning',
+    'mid':'rookie',
+    'adc':'jackeylove',
+    'sup':'baolan'
+    },
+}
+>>> for place,player in lpl.items():
+>>> print(place)
+>>> print(player)
+rng
+{'top': 'letme', 'jun': 'mlxg', 'mid': 'xiaohu', 'adc': 'uzi', 'sup': 'ming'}
+ig
+{'top': 'the shy', 'jun': 'ning', 'mid': 'rookie', 'adc': 'jackeylove', 'sup': 'baolan'}
