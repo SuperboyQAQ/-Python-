@@ -9,3 +9,8 @@ title（）   # 首字母大写
 upper（）   # 全部大写
 lower（）   # 全部小写
 str（）     # 避免类型错误
+
+#理解 int() , float() , str()
+int() #转化成 数值
+float() #转化成 浮点数
+str() #转化成 字符
