@@ -6,3 +6,114 @@
 >>> print("hello,",name)
 what's your name: Rimuru
 hello,Rimuru
+
+# 理解 int() , float() , str()
+int() #转化成 数值
+float() #转化成 浮点数
+str() #转化成 字符
+
+# while循环
+# 使用 while循环 
+>>> number = 1              
+>>> while number <= 5:          # 做一个number小于等于5的循环，当number大于5时停止运行
+...     print(number)           # 输出number,1
+...     number = number+1       # 完成上面指令后 number + 1，再返回循环开始。
+1
+2
+3
+4
+5
+
+# 用户选择性退出
+>>> a = "you favourit lol hero is :"
+>>> a += "\nyou can enter 'quit'"
+>>> message = ""                    # 储存一个值
+>>> while message != 'quit':        # 做一个 message 不等于 quit 的循环
+...     message = input(a)          # 在 message 中输入 a
+...     if message != 'quit':       # 如果 message 不为 quit or 如果 message 为 quit ，循环结束
+            print(message)          # 就输入message，然后返回上面的循环。
+you favourit lol hero is who
+you can enter 'quit': timmor
+timmor
+you favourit lol hero is who
+you can enter 'quit': quit
+
+# 使用标志
+>>> a = "you favourit lol hero is who"      
+>>> a += "\nyou can enter 'quit': "
+>>> message = True                  # 将 message 设置为 True
+>>> while message:                  # 做一个关于 message 的循环
+...     message = input(a)          # 在 message 中输入 a
+...     if message == 'quit':       # 如果 message 为 quit or 如果 message 不为 quit，返回上面的循环
+...         message = False         # message 就为 False ，循环结束
+you favourit lol hero is who
+you can enter 'quit': teemo
+you favourit lol hero is who
+you can enter 'quit': quit
+
+# 使用 break退出循环
+>>> a = "you favourit lol hero is who"
+>>> a += "\nyou can enter 'quit': "
+>>> while a:                        # 做一个关于 a 的循环
+...     message = input(a)          # 在 message 中输入 a
+...     if message == 'quit':       # 如果message 为 quit or 如果message 不为 quit，返回上面的循环
+...         break                   # 退出循环
+
+# 再循环中使用 continue ((略过此次循环的值
+>>> number = 0                      # 建立一个值为 0 的 number
+>>> while number < 10:              # 做一个关于number 小于 10 的
+...     number = number + 1
+...     if number % 2 == 0:
+...         continue
+...     print(number)
+1  
+3
+5
+7
+9
+
+# 使用while循环来处理列表和字典
+# 在列表之间移动元素
+>>> player = ['jackeylove','uzi','smlz']
+>>> lpl_adc = []
+>>> while player:                   # 做一个关于player的循环
+...     adc = player.pop()          # 用.pop() 函数 将 player 里的元素移动到 adc 中
+...     print("lol选手有:",adc)     # 输出 lol 的选手有 adc
+...     lpl_adc.append(adc)         # 在 lpl_adc 中添加 adc 中的元素
+>>> print("lpl的adc有")             # 输出 lpl的adc有
+>>> for lpl_adc in lpl_adc:         
+...     print(lpl_adc)
+lol选手有: smlz
+lol选手有: uzi
+lol选手有: jackeylove
+lpl的adc有
+smlz
+uzi
+jackeylove
+
+# 删除包含特定值的所有列表元素
+>>> pets = ['cat','dog','goldfish','cat','cat']
+>>> while 'cat' in pets:
+...     pets.remove('cat')
+>>> print(pets)
+['dog', 'goldfish']
+
+#使用用户输入来填充字典
+>>> lpl = {}                                    # 创建一个空字典
+>>> true = True                                 # 设置一个标志
+>>> while true:                                 # 做一个关于 true 的循环
+...     a = input("你的名字是：")                # 输入 你的名字是： ，得出 a 的值
+...     b = input("你最喜欢的adc是：")           # 输入 你最喜欢的adc是： ，得出 b 的值
+...     lpl[a] = b                              # 将 a 和 b 添加入 字典
+...     c = input("你愿意推广么：(yes/no)")      # 输入 你愿意推广么：(yes/no) ，得出 c 的值
+...     if c == 'no':                           # 如果 c 为 no    or    如果不为 no ，返回上面的循环 
+...         true = False                        # 标志 True 变为 False ，循环结束
+>>> print("---分割线---")                          
+>>> for name,player in lpl.items():             
+...     print(name," favorite adc is",player)
+你的名字是：xu
+你最喜欢的adc是：uzi
+你愿意推广么：(yes/no)yes
+你的名字是：duan
+你最喜欢的adc是：smlz
+你愿意推广么：(yes/no)no
