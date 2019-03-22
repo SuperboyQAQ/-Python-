@@ -1,0 +1,39 @@
+# Python
+关于我学习Python那回事
+
+# 函数                           ((函数可多次调用
+# 定义函数
+>>> def lol():                  #创建一个名为 lol 的函数，括号内指出函数为完成其任务需要什么信息。
+...     """显示简单的问候语"""    #文档字符串的注释，描述函数是做什么的，三引号括起，python使用它们来生成有关程序中函数的文档。
+...     print("hello!")         #打印 Hello！         
+>>> lol()                       #执行函数 lol() 
+hello!
+
+# 向函数传递信息
+>>> def lol(sb):                #创建一个名为 lol 的函数，括号内可让函数接受你给sb的任何值。
+...     """显示简单的问候语"""
+...     print("hello!",sb)
+>>> lol('xjh')
+hello! xjh
+
+# 形参和实参
+由上述函数可知
+sb 为 形参
+xjh 为 实参
+
+# 默认值
+>>> def lol(sb,sb_1='dhq'):     #创建一个名为 lol 的函数，括号内指出函数为完成其任务需要什么信息,而sb_1的默认值为dhq。
+...     """显示简单的问候语"""
+...    print("hello!",sb,",",sb_1)
+>>> lol('xjh')
+hello! xjh , dhq
+
+((避免实参错误!!!
+
+# 返回值
+>>> def lol(f_name,l_name):                  # 创建一个名为 lol 的函数,括号内有两个自定义的值
+...     full_name = f_name + l_name          
+...     return full_name                     # 返回到函数调用行
+>>> a = lol("xu","jianhui")                  # 提供一个变量,储存返回的值
+>>> print(a)                                 # 打印变量 a
+xujianhui
