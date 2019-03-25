@@ -37,3 +37,18 @@ hello! xjh , dhq
 >>> a = lol("xu","jianhui")                  # 提供一个变量,储存返回的值
 >>> print(a)                                 # 打印变量 a
 xujianhui
+
+# 结合使用函数和 while循环                           # 创建一个名为 lol 的函数,括号内有两个自定义的值
+>>> def lol(f_name,l_name):                 
+...     full_name = f_name + l_name
+...     return full_name
+>>> while True:                                     # 做一个循环
+...     print("\nplease tell me your name"          # 输入......
+...         "\nyou can enter 'q'")                  
+...     f_name = input("first name:")               # 将输入的值保存在 f_name 中
+...     if f_name == 'q':                           # 如果 f_name 等于 q 时
+...         break                                   # 循环关闭
+...     l_name = input("last name:")                # 将输入的值保存在 l_name 中 
+...     if l_name == 'q':                           # 如果 l_name 等于 q 时
+...         break                                   # 循环关闭
+...     print("hello,",lol(f_name,l_name) + ".")    
