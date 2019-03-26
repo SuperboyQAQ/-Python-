@@ -52,3 +52,19 @@ xujianhui
 ...     if l_name == 'q':                           # 如果 l_name 等于 q 时
 ...         break                                   # 循环关闭
 ...     print("hello,",lol(f_name,l_name) + ".")    
+
+# 在函数中修改列表
+>>> def a(lpl,rng):                                 # 创建一个名为 a 的函数，括号内的为自定义的值
+...     while lpl:                                  # 做一个关于 lpl 的循环
+...         b = lpl.pop()                           # 将 lpl 里的元素移动到 b 中
+...     print("lpl的成员有：" + b)                   
+...     rng.append(b)                               # 将 b 中的元素添加到 rng 中
+>>> def c(rng):                                     # 创建一个名为 c 的函数，括号内的为自定义的值
+...     print("rng的队员有:")                       
+...     for r in rng:                               # 做一个 r 遍历 rng
+...         print(r)                                # 输入 r
+>>> lpl = ["xiaohu","karsa","ming"]                 
+>>> rng = []
+>>> # ---分割线---
+>>> a(lpl,rng)                                      # 执行 函数 a(lpl,rng)
+>>> c(rng)                                          # 执行 函数 c(rng)
