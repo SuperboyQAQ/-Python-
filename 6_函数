@@ -64,7 +64,41 @@ xujianhui
 ...     for r in rng:                               # 做一个 r 遍历 rng
 ...         print(r)                                # 输入 r
 >>> lpl = ["xiaohu","karsa","ming"]                 
->>> rng = []
+>>> rng = []  
 >>> # ---分割线---
 >>> a(lpl,rng)                                      # 执行 函数 a(lpl,rng)
 >>> c(rng)                                          # 执行 函数 c(rng)
+lpl的成员有：ming
+lpl的成员有：karsa
+lpl的成员有：xiaohu
+rng的队员有:
+ming
+karsa
+xiaohu
+# 结合使用位置实参和任意数量实参
+>>> def a(*q,number=1):                                         # 创建一个名为 a 的函数，' *q '为任意数量实参，' number '为位置实参
+...     print("emm...")                                         
+...     y = []                                                  # 创建一个空元组
+>>>     while True:                                             # 创建一个循环
+...         q = input("请输入你认识的人,\n没有了输入‘q’退出:")     # 将输入的值保存在 q 中
+...         if q == 'q':                                        # 如果 q 等于 'q'
+...         print("好的，结束")                                  
+...         break                                               # 结束
+...     y.append(q)                                             # 将 q 的值 添加到 y 中
+>>> for n in y:                                                 # 遍历元组 y
+...     print("No." + str(number),"- hello,",n)                 
+...     number = number + 1
+>>> a()
+emm...
+请输入你认识的人,
+没有了输入‘q’退出:xjh
+请输入你认识的人,
+没有了输入‘q’退出:dhq
+请输入你认识的人,
+没有了输入‘q’退出:lts
+请输入你认识的人,
+没有了输入‘q’退出:q
+好的，结束
+No.1 - hello, xjh
+No.2 - hello, dhq
+No.3 - hello, lts
