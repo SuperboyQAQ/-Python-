@@ -108,22 +108,22 @@ No.3 - hello, lts
 def a():
 def b():
 1.导入整个模块
-import qwq
+import qwq                      # 导入 qwq 模块
 
-qwq.a()
+qwq.a()                         # 执行 qwq 中的 函数 a
 2.导入特点的函数
-from qwq inport a,b
+from qwq inport a,b             # 从 qwq 模块中 导入 函数 a,b
 
-a()
+a()                             # 执行 函数 a
 3.导入所有的函数
-from qwq import *
+from qwq import *               # 导入 qwq 模块中的 所有函数
 
-a()
+a()                             # 执行 函数 a
 4.使用 as 给函数指定别名
-from qwq import a as adc
+from qwq import a as adc        # 从 qwq 模块中 导入 函数 a 并将函数命名为 函数 adc
 
-adc()
+adc()                           # 执行函数 adc
 5.使用 as 给模块指定别名
-import qwq as lol
+import qwq as lol               # 导入 qwq 模块 并将模块命名为 lol
 
-p.a()
+lol.a()                         # 执行 模块 lol 中的 函数 a
