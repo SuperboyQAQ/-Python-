@@ -102,3 +102,28 @@ emm...
 No.1 - hello, xjh
 No.2 - hello, dhq
 No.3 - hello, lts
+
+# 将函数存储在模块中
+创建两个函数
+def a():
+def b():
+1.导入整个模块
+import qwq
+
+qwq.a()
+2.导入特点的函数
+from qwq inport a,b
+
+a()
+3.导入所有的函数
+from qwq import *
+
+a()
+4.使用 as 给函数指定别名
+from qwq import a as adc
+
+adc()
+5.使用 as 给模块指定别名
+import qwq as lol
+
+p.a()
