@@ -1,0 +1,35 @@
+# Python
+关于我学习Python那回事
+
+# 类                           ((类可多次调用
+# 类 += 继承
+class dog():                                                      # 创建一个关于 dog 的类
+    def __init__(self,name,age):                                  # 用特殊的方法 __init__来实现运行 dog 的类，其中有三个形参self，name,age((self 不能少
+        self.name = name                                          # 存储在形参 name 的值   
+        self.age = age
+        self.weight = 5                                           # 存储形参 weight 的默认值
+    def sit(self):                                                # 创建一个关于 sit(self) 的函数
+        print(self.name.title() + " is now sitting.")             # 输入（name 的 实参.大写 + ...）
+    def roll_over(self):                                          # 创建一个...
+        print(self.name.title() + " rolled over.")                # 输入（...）
+    def weights(self,weight):                                     # 创建一个关于 weight(self) 的函数
+        self.weight = weight                                      # self.实参(weight) = weight
+# 继承                                                            # 继承
+class cat(dog):                                                   # 创建一个关于 cat 的类（（cat 类 继承了 dog 类    
+    def __init__(self,name,age):                                    # 用方法 __init__ 来接受创建car实例所需的信息
+        super().__init__(name,age)                                      # 用特殊函数 super() 来帮助 子类(cat) 和 父类(dog) 进行关联
+    def cat_gander(self,gender):                                    # 创建一个关于 cat_gander 的幻术
+        self.gender = gender                                            # self.实参(gender) = gender
+
+my_cat = cat("bili",5)                                            # 
+my_cat.cat_gander("female")
+print("my cat name is " + my_cat.name.title() + ","
+"It's a " + str(my_cat.gender) + " cat.")
+
+my_dog = dog("pop",5)
+friend_gog = dog("edi",3)
+my_dog.weights(3)
+print("My dog name is " + my_dog.name.title() + ",it " +
+str(my_dog.weight) + "kg")
+my_dog.roll_over()
+friend_gog.sit()
