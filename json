@@ -1,0 +1,58 @@
+# Python
+关于我学习Python那回事
+
+切记！！！索引从0开始不是1
+
+json:(关于json的小程序)
+#注册 界面
+import json
+
+def names():
+    name = input("请输入你的姓名:")
+    name_n = input("请输入你的账号:")
+    name_p = input("请输入你的密码:")
+    name_t = {}
+    name_t["name"] = name
+    name_t["name_n"] = name_n
+    name_t["name_p"] = name_p
+
+    name_a = 'name_t.json'
+    with open(name_a,'a') as b:
+        json.dump(name_t,b)
+        print("你好，" + name + ",我会记住你的账号及密码.")
+names()
+
+#登陆 界面
+import json
+
+def lol():
+    print("请输入你的账号及密码")
+    name_n = input("账号：")
+    name_p = input("密码：")
+    d = {}
+    d["name_n"] = name_n
+    d["name_p"] = name_p
+
+    name_a = 'name_t.json'
+    with open(name_a) as b:
+        c = json.load(b)
+
+        name_n_1 = str(d['name_n'])
+        name_n_2 = str(c['name_n'])
+        name_p_1 = str(d['name_p'])
+        name_p_2 = str(c['name_p'])
+
+    p = True
+    while p:
+        if name_n_1 == name_n_2 and name_p_1 == name_p_2:
+            print("欢迎回来，" + c["name"])
+            break
+        else:
+            true = input("账号或密码错误！\n输入'r'重新登陆,输入'q'退出")
+            if true == 'r':
+                lol()
+                p = False
+            elif true == 'q':
+                p = False
+                break
+lol()
