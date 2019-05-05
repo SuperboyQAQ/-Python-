@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt         #导入模块 pyplot 并命名为 plt
+
+""" 绘制简单的折线图"""
+squares = [1,4,9,16,25]
+
+plt.plot(squares,linewidth=5)           #将 列表squares 传递给 函数plot()
+* linewidth 决定 plot() 绘制线条的粗细
+
+#设置 图表，坐标轴 标签及字体大小
+plt.title("THE TITLE",fontsize=24)
+plt.xlabel("THE XLABEL",fontsize=14)
+plt.ylabel("THE YLABEL",fontsize=14)
+
+#设置 刻度标记 的大小
+plt.tick_params(axis='both',labesize=14)
+* 函数tick_params 设置刻度样式，(axis='both')指定的实参影响x轴，y轴的刻度，labelsize 将标记的字号设置为14
+
+plt.show()                              #通过 函数show() 打开 matplotlib查看器
+
+"""使用 scatter()　绘制散点图"""
+plt.scatter(2,4)                        #
