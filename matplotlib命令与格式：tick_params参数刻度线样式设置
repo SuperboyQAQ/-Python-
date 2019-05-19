@@ -1,0 +1,44 @@
+2.tick_params例子:
+参数axis的值为'x'、'y'、'both'，分别代表设置X轴、Y轴以及同时设置，默认值为'both'。
+ax1.tick_params(axis='x',width=2,colors='gold')
+ax2.tick_params(axis='y',width=2,colors='gold')
+ax3.tick_params(axis='both',width=2,colors='gold')
+
+参数which的值为 'major'、'minor'、'both'，分别代表设置主刻度线、副刻度线以及同时设置，默认值为'major'
+ax1.tick_params(which='major',width=2,colors='gold')
+ax2.tick_params(which='minor',width=2,colors='gold')
+ax3.tick_params(which='both',width=2,colors='gold')
+
+参数direction的值为'in'、'out'、'inout'，分别代表刻度线显示在绘图区内侧、外侧以及同时显示
+ax1.tick_params(direction='in',width=2,length=4,colors='gold')
+ax2.tick_params(direction='out',width=2,length=4,colors='gold')
+ax3.tick_params(direction='inout',width=2,length=4,colors='gold')
+
+length和width
+参数length和width分别用于设置刻度线的长度和宽度
+ax2.tick_params(width=4,colors='gold')
+ax3.tick_params(length=10,colors='gold')
+
+参数pad用于设置刻度线与标签间的距离
+ax2.tick_params(pad=1,colors='gold')
+ax3.tick_params(pad=10,colors='gold')
+
+参数color、labelcolor、colors分别用于设置刻度线的颜色、刻度线标签的颜色以及同时设置刻度线及标签颜色
+ax1.tick_params(width=4,color='gold')
+ax2.tick_params(width=4,labelcolor='gold')
+ax3.tick_params(width=4,colors='gold')
+
+参数labelsize用于设置刻度线标签的字体大小
+ax1.tick_params(labelsize='medium')
+ax2.tick_params(labelsize='large')
+ax3.tick_params(labelsize=15)
+
+参数bottom, top, left, right的值为布尔值，分别代表设置绘图区四个边框线上的的刻度线是否显示
+ax1.tick_params(bottom=False,top=True,width=4,colors='gold')
+ax2.tick_params(left=False,right=True,width=4,colors='gold')
+ax3.tick_params(top=True,right=True,width=4,colors='gold')
+
+参数labelbottom, labeltop, labelleft, labelright的值为布尔值，分别代表设置绘图区四个边框线上的刻度线标签是否显示
+ax1.tick_params(labelbottom=False,labeltop=True,width=4,colors='gold')
+ax2.tick_params(labelleft=False,labelright=True,width=4,colors='gold')
+ax3.tick_params(labeltop=True,labelright=True,width=4,colors='gold')
